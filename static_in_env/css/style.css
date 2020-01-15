@@ -1,0 +1,118 @@
+/* Required height of parents of the Half Page Carousel for proper displaying carousel itself */
+html,
+body,
+.view {
+  height: 100%;
+}
+
+/* Half Page Carousel itself*/
+.carousel {
+  height: 50%;
+}
+.carousel .carousel-inner {
+  height: 100%;
+}
+.carousel .carousel-inner .carousel-item,
+.carousel .carousel-inner .active {
+  height: 100%;
+}
+
+/* Adjustment for mobile devices*/
+@media (max-width: 776px) {
+  .carousel {
+    height: 100%;
+  }
+}
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #2299b1!important;
+}
+.footer-copyright {
+  background-color: #c0c0c0 !important;
+}
+
+/* Navbar */
+.navbar-custom {
+  background-color: #62376d !important;
+}
+
+/* product card */
+h3 {
+  text-align: center;
+  margin: 1em;
+  text-transform: capitalize;
+  font-size: 1.7em;
+}
+.product-grid {
+  font-family: Gotham Rounded Light;
+  text-align: center;
+  padding: 0 0 72px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  height: 300px;
+}
+.product-grid .product-image {
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+.product-grid .product-image a {
+  display: block;
+}
+.product-grid .product-image img {
+  width: 100%;
+  height: auto;
+}
+.product-grid .pic-1 {
+  opacity: 1;
+  transition: all 0.3s ease-out 0s;
+}
+/*.product-grid:hover .pic-1{opacity: 1;}*/
+.product-grid .product-content {
+  background-color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -27px;
+  z-index: 1;
+  transition: all 0.3s;
+}
+.product-grid:hover .product-content {
+  bottom: 0;
+}
+.product-grid .product-content .product-title a {
+  font-size: 16px;
+  color: #ec2872;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  margin: 0 0 12px;
+  transition: all 0.3s ease 0s;
+}
+.product-grid .product-title:hover,
+.product-grid:hover .product-title a {
+  color: #ed80e5;
+}
+.product-grid .price h4 {
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.6px;
+  margin-bottom: 8px;
+  text-align: center;
+  transition: all 0.3s;
+}
+.navbar-brand {
+  font-family: Gotham Rounded Book;
+}
+.link-items ul li {
+  font-family: Gotham Rounded Book !important;
+}
+
+/*@media only screen and (max-width:990px){.product-grid{margin-bottom: 30px;}}*/
